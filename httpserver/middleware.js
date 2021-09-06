@@ -10,9 +10,10 @@ function logs(req, res, next){
 }
 
 router.use(logs)
-router.use('/api',apirouter)
-router.use('/',(req, res)=>{
-    res.send('Main')
-})
+router.use('/api',function(req, res, next)
+{
+  if (!req.is('application/json'))res.send(400)
+  else next()
+},apirouter)
 
 module.exports = router
