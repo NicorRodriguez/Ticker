@@ -2,6 +2,6 @@
 
 Ticker is task managment aplication.
 
-#Infrastructure
+# Infrastructure
 
 ![alt text](https://github.com/NicorRodriguez/Ticker/blob/main/TickerStructure.png)
