@@ -2,10 +2,10 @@ const db = require('mongoose')
 
 const user = 'admin'
 const pwd = 'admin'
-const uri = 'mongodb://localhost:8081'
+const uri = 'mongodb://localhost:8081/ticker'
 
-db.connect(uri,{useNewUrlParser: true, iseUnifiedTopology: true}).then(() =>{
-
+db.connect(uri).then(() =>{
+  console.log('anashe');
 }).catch(err => {
   console.log(err);
 })
