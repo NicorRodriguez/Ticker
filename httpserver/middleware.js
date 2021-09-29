@@ -1,9 +1,6 @@
 const express = require('express')
 var apirouter = require('./router/apirouter.js')
 
-var connectTimeout = require('connect-timeout');
-var longTimeout = connectTimeout({ time: 600000 });
-
 const app = express()
 var router = express.Router()
 
